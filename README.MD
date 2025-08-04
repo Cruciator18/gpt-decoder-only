@@ -36,15 +36,19 @@ This model was trained and validated on a **T4 GPU**. Due to the computational i
 * Git
 * Python 3.9+
 * A CUDA-enabled NVIDIA GPU
+---
 
 ### 2. Clone the Repository
 ```bash
 git clone [https://github.com/Cruciator18/gpt-decoder-only.git](https://github.com/Cruciator18/gpt-decoder-only.git)
 cd gpt-decoder-only
+---
+
 
 ### 3. Create and Activate a Virtual Environment
 It's highly recommended to use a virtual environment to manage dependencies.
 
+---
 
 ### Create the environment
 python -m venv .venv
@@ -128,5 +132,6 @@ The architecture is based on the original Transformer paper: Attention Is All Yo
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
 
 
