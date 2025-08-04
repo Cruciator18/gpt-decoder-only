@@ -17,6 +17,20 @@ The model is trained on the TinyShakespeare dataset to generate new text in the 
 
 ## Key Features & Improvements
 
+# Character-Level GPT Language Model
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.1-orange.svg)](https://pytorch.org/)
+
+This project is a clean, polished PyTorch implementation of a decoder-only Transformer (GPT-style model), designed for character-level text generation. The architecture is based on the groundbreaking "Attention Is All You Need" paper and inspired by Andrej Karpathy's nanoGPT project.
+
+The model is trained on the TinyShakespeare dataset to generate new text in the style of Shakespeare.
+
+---
+
+## Key Features & Improvements
+
 * **GPT-2 Style Weight Initialization**: The model uses a more sophisticated initialization scheme where the weights of residual projection layers are scaled down. This is crucial for stabilizing training in deeper networks by ensuring a clean gradient flow from the start.
 * **Mixed Precision Training**: The training loop leverages PyTorch's Automatic Mixed Precision (`torch.amp`). This boosts performance by using `float16` for certain operations, which significantly speeds up computation on modern GPUs with Tensor Cores and reduces memory footprint.
 * **Overfitting Mitigation**: To ensure the model generalizes well on the small TinyShakespeare dataset, several regularization techniques have been implemented:
@@ -44,7 +58,6 @@ This model was trained and validated on a **T4 GPU**. Due to the computational i
 ```bash
 git clone [https://github.com/Cruciator18/gpt-decoder-only.git](https://github.com/Cruciator18/gpt-decoder-only.git)
 cd gpt-decoder-only
-````
 
 ### 3\. Create and Activate a Virtual Environment
 
@@ -165,3 +178,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ```
 ```
+
