@@ -15,9 +15,9 @@ dropout = 0.2
 n_embd = 256
 n_head = 4
 n_layer = 4
-# -----------------------------------------------------------------
 
-# We'll use this to check if we can use AMP
+
+
 use_amp = (device == 'cuda')
 print(f"Using device: {device}, Automatic Mixed Precision: {use_amp}")
 
